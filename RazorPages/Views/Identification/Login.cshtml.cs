@@ -16,5 +16,10 @@ namespace RazorPages.Views.Identification
         public void OnGet()
         {
         }
+
+        public void OnPost()
+        {
+
+        }
     }
 }
