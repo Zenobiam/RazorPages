@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace RazorPages.Controllers
 {
     public class HomeController : Controller
@@ -33,5 +34,22 @@ namespace RazorPages.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        //[Route("/login")]
+        //[HttpPost]
+        //public IActionResult Login([FromForm] Credentials credential)
+        //{
+        //
+        //    if (credential != null)
+        //    {
+        //        User user = new User
+        //        {
+        //            login = credential.login,
+        //            password = credential.password
+        //        };
+        //        return Ok();
+        //    }
+        //    return Unauthorized();
+        //}
     }
 }

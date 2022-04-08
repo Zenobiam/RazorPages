@@ -1,6 +1,5 @@
-﻿@page
-@*@model RazorPages.Views.Identification.LoginModel*@
-@model RazorPages.Models.Credentials
+﻿@using RazorPages.Models
+@model RazorPages.Views.Identification.LoginModel
 @{
 }
 
@@ -9,19 +8,19 @@
     <form method="post">
         <div class="form-group row">
             <div class="col-3">
-                <label asp-for="login"></label>
+                <label asp-for="credential.login"></label>
             </div>
             <div class="col-5">
-                <input type="text" asp-for="password" />
+                <input type="text" asp-for="credential.login" class="form-control"/>
             </div>
         </div>
 
         <div class="form-group row">
             <div class="col-3">
-                <label asp-for="password"></label>
+                <label asp-for="credential.password"></label>
             </div>
             <div class="col-5">
-                <input type="text" asp-for="password"/>
+                <input type="text" asp-for="credential.password" class="form-control"/>
             </div>
         </div>
     </form>
